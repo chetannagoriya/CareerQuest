@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerQuest | Internship</title>
+    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+    <link rel="stylesheet" href="./resouces/landing_page/css/style.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/header.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/footer.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/banner.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/popup.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/filter.css">
+    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+    <link rel="stylesheet" href="https://internshala.com/static/css/home/index.1621498208.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./resouces/landing_page/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+    .modalLeftlast {
+        min-width: 120px;
+        max-width: 120px;
+        height: auto;
+        background-image: url("./resouces/login_page_student/image/modal_success_background.svg");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        border-radius: 6px 0 0 6px;
+        display: flex;
+        justify-content: center;
+    }
+    .modalLeftlast img{
+    vertical-align: middle;
+        border-style: none;
+        width: 48px;
+    }
+
+    .modalRightlast {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 32px 32px 32px 24px;
+    }
+    .messagelast{
+    color: #484848;
+    font-size: 24px;
+    line-height: 1.57142857;
+    font-weight: 400;
+    text-align: left;
+    }
+    .closeBtnContlast{
+    margin-top: 8px;
+    text-align: right;
+    }
+    .closebtnlast{
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 16px;
+    margin-top: 16px;
+    background: #00A5EC;
+    border-radius: 3px;
+    border: 1px solid #00A5EC;
+    padding: 7px 15px;
+    font-weight: 600;
+    min-width: 80px;
+    line-height: 1.14285714;
+    font-size: 14px;
+    text-align: center;
+    float: right;
+    }
+    .closebtnlast:hover{
+    background-color: #007bff;
+    }
+
+    .bg-modallast {
+    position: fixed;
+    transition: 200ms ease-in-out;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    pointer-events: none;
+    }
+
+    .modal-contentslast {
+        background-color: white;
+        text-align: center;
+        position: relative;
+        border-radius: 6px;
+        display: flex;
+        border: 1px solid black;
+        box-shadow: 0 12px 24px rgb(0 0 0 / 8%);
+        border: none;
+        font-family: sans-serif;
+        max-width: 648px; 
+        transition: 600ms ease-in-out;
+        pointer-events:fill;
+        z-index: 10;
+        background: #fff;
+        border: none;
+        border-radius: 0;
+        min-height: 57px;
+    }
+
+    /*button css*/
+    #submit3
+    {
+        background-color: #007bff;
+        color: white;
+    }
+
+  /* modal-sucess-css-end */
+
+    </style> 
+
+</head>
+<body>
+    <div class="cont">
+ <!--popup-->
+ <div class="overlay">
+</div>
+    <div class="main-popup">
+    <div class="popup-header">
+    <div id="popup-close-button"><a href="#"></a></div>
+    <ul>
+        <li><a href="#" id="sign-in">Student</a></li>
+        <li><a href="#" id="register">Employer / T&P</a></li>
+    </ul>
+    </div><!--.popup-header-->
+    <div class="popup-content">
+
+    <form class="sign-in" id="stuId">
+        <div class="googlebtn">  
+            <button><img src="./resouces/landing_page/image/google_logo.webp"/>Login with Google</button>
+        </div>
+        <div class="crossline">
+            <hr class="he">
+            <p>OR</p>
+            <hr class="he">
+        </div>
+        <div id="main2"></div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="john@example.com" autocomplete="off">
+       </div>
+       <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" autocomplete="off" placeholder="Must be atleast 6 characters">
+      </div>
+        <div class="link">
+        <a href="">Forgot Password?</a>
+        </div>
+        <div>
+        <input type="button" id="submit3" value="Login">
+    </div>
+        <div class="btmclass">
+            <p>New to Internshala? Register (<a href="#"><b>Student</b> </a>/ <a href="#"><b>Company</b></a>)</p>
+        </div>
+    </form>
+
+   
+       <form class="register" id="emplogin">
+        <div id="main"></div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="log_email" placeholder="john@example.com" autocomplete="off">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="log_password" autocomplete="off" placeholder="Must be atleast 6 characters">
+      </div>
+        <div class="link">
+        <a href="">Forgot Password?</a>
+        </div>
+      <div>
+        <input type="button" id="submit2" value="Login">
+      </div>
+        <div class="btmclass">
+            <p>New to Internshala? Register (<a href="./resouces/login_page_student/login.html"><b>Student</b> </a>/ <a href="#"><b>Company</b></a>)</p>
+        </div>
+      </form>
+    </div><!--.popup-content-->
+</div><!--.main-popup-->
+<!--End popup-->
+
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+       <!--left slider-->
+       <div class="LSliderresponsive" id="responsiveId">
+        <p><i id="filter_ui_icon_desktop" class="ic-24-filter-applied"></i> Filters</p>
+       <div class="gap">
+
+        <label>Category</label>
+        <select name="category" id="category" onchange="category(this.value,this.name)">
+            <option value="" disabled selected hidden>e.g. Marketing</option>
+            <option value="android">Android App Development</option>
+            <option value="animation">Animation</option>
+            <option value="blogging">Blogging</option>
+            <option value="brandmanagement">Brand Management</option>
+            <option value="caddesign">CAD Design</option>
+            <option value="cloudcomputing">Cloud Computing</option>
+            <option value="datascience">Data Science</option>
+            <option value="digitalmarketing">Digital Marketing</option>
+        </select>
+
+        <label>Location</label>
+        <select name="location" id="location" onchange="category(this.value,this.name)">
+            <option value="" disabled selected hidden>e.g. Mumbai</option>
+            <option value="banglore">Banglore</option>
+            <option value="delhi">Delhi</option>
+            <option value="chennai">Chennai</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="noida">Noida</option>
+            <option value="gurugram">Gurugram</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+        </select>
+       
+       </div>
+
+        <div class="check">
+            <div>
+                <p>work from home</p>
+            </div>
+             <div>
+               <label class="switch">
+                   <input type="checkbox">
+                   <span class="slide round"></span>
+                 </label>
+             </div>
+        </div>
+
+        <div class="check">
+           <div>
+               <p>Part-time</p>
+           </div>
+            <div>
+              <label class="switch">
+                  <input type="checkbox">
+                  <span class="slide round"></span>
+                </label>
+            </div>
+       </div>
+
+       <div class="range">
+           <div class="content">
+               <p>Desired minimum monthly stipend (₹)</p>
+           </div>
+            <div class="prang">
+               <input type="range" name="vol" min="0" max="12100" value="0">
+               <div class="rate">
+                   <p>0</p>
+                   <p>2k</p>
+                   <p>4k</p>
+                   <p>6k</p>
+                   <p>8k</p>
+                   <p>10k</p>
+               </div>
+           </div>
+       </div>
+
+
+       <div class="gap">
+
+           <label>Starting from (or after)</label>
+           <input type="text" placeholder="Choose date"/>
+ 
+           <label>Max. duration (months)</label>
+           <input type="text" placeholder="Choose duration"/>
+         
+     </div>
+
+
+     <div class="check">
+       <div>
+           <p>
+               Internships for women <a href="#" data-toggle="tooltip" data-placement="top" title="Will show internships which are also open to women (re)starting their careers"><i class="open_popover ic-16-help-circle" popover_content="Will show internships which will offer a full-time job to the intern at the end of internship depending on performance" data-original-title="" title=""></i></a></p>
+       </div>
+        <div>
+          <label class="switch">
+              <input type="checkbox">
+              <span class="slide round"></span>
+            </label>
+        </div>
+   </div>
+
+   <div class="check">
+       <div>
+           <p>Internships with job offer <a href="#" data-toggle="tooltip" data-placement="top" title="Will show internships which will offer a full-time job to the intern at the end of internship depending on performance"><i class="open_popover ic-16-help-circle" popover_content="Will show internships which will offer a full-time job to the intern at the end of internship depending "></i></a></p>
+       </div>
+        <div>
+          <label class="switch">
+              <input type="checkbox">
+              <span class="slide round"></span>
+            </label>
+        </div>
+   </div>
+
+       <div class="clear">
+        <a href="">Clear all</a>
+       </div>
+
+      <div class="line">
+         <hr style="width:50%">
+         <p>OR</p>
+         <hr style="width:50%">
+      </div>
+
+
+      <div class="filterSearch">
+          <p>Search</p>
+          <div class="flex">
+       <input type="text" placeholder="e.g. MBA, Design, Mumbai">
+       <span class="searchBtn">
+           <button type="button">
+               <i class="icon_search ic-24-search"></i>
+           </button>
+       </span>
+   </div>
+       </div>
+
+       </div>
+       <!--end left slider-->
+
+    </div>
+  
+  </div>
+
+  
+      <!--responsive Menu bar-->
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="resMenu">
+        <a href="./intrenshala.html">Internships</a>
+        <a href="./training.html" target="_blank">Online Trainings <span>CONTEST</span></a>
+        <a href="#">WFH Internships</a>
+        <a href="./intrenshala.html">Fresher Jobs</a>
+        <a href="#">Contact Us</a>
+        <hr class="hrLine">
+        <a href="./login_student.html">Register - As a Student</a>
+        <a href="./login_emp.html">Register - As an Employer</a>
+        <a href="#">Login</a>
+      </div>
+      </div>
+      <!--End responsive Bar-->
+
+    <nav class="header">
+        <div class="height-cont">
+            <div class="flex">
+                <div class="imgflex">
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    <a href="./index.html"><img src=""/>
+                        <H1 class="chetan" style="color: #00a5ec; font-size: 40px; text-decoration: underline; font-weight: bolder; ">Career Quest </H1></a>
+                </div>
+                <div class="btn" id="menu">
+                <div><a href="intrenshala.html">Internships</a></div>
+                <div><a href="./training.html" target="_blank">Online Trainings <span class="spanStyle">OFFER</span></a></div>
+                <div><a href="./intrenshala.html">Fresh Jobs</a></div>
+                <div><button class="btnLogin" id="loginBtn">Login</button></div>
+                <div class="dropdown">
+                <div>
+                    <button class="btnRegister" id="registerbtn">Register  <i class="is_icon_header ic-24-filled-down-arrow"></i></button>
+                    <div class="dropdown-content">
+                        <nav>
+                            <div><a href="./login_student.html">As a Student</a></div>
+                            <div><a href="./login_emp.html">As an employer</a></div>
+                        </nav>
+                    </div>
+                </div>
+            </div> 
+
+            </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="filter_button">
+            <button id="myBtn"><i class="ic-16-filter" style="color: #00A5EC;"></i> <span>Filters</span></button>
+        </div>
+       
+        <div class="title">
+           <h4><span id="postcount">0</span> total internships <i id="content_open_button" class="ic-16-chevron-down"></i></h4>
+        </div>
+        <div id="toggle" class="toggle_content" style="display: none;">
+            Are you looking for internships?<br>
+            An internship is the best way to put classroom knowledge to practice. By doing an internship, you will gain experience, learn new skills, and add value to your resume while being paid for your work.
+            <br>Start today. Search for internships in India across various streams matching your preferences and apply for free.
+        </div>
+        <!--slider-->
+        <div class="slider">
+        <!--left slider-->
+        <div class="LSlider">
+         <p><i id="filter_ui_icon_desktop" class="ic-24-filter-applied"></i> Filters</p>
+        <div class="gap">
+
+        <label>Category</label>
+        <select name="category" id="category" onchange="category(this.value,this.name)">
+            <option value="" disabled selected hidden>e.g. Marketing</option>
+            <option value="android">Android App Development</option>
+            <option value="animation">Animation</option>
+            <option value="blogging">Blogging</option>
+            <option value="brandmanagement">Brand Management</option>
+            <option value="caddesign">CAD Design</option>
+            <option value="cloudcomputing">Cloud Computing</option>
+            <option value="datascience">Data Science</option>
+            <option value="digitalmarketing">Digital Marketing</option>
+        </select>
+
+        <label>Location</label>
+        <select name="location" id="location" onchange="category(this.value,this.name)">
+            <option value="" disabled selected hidden>e.g. Mumbai</option>
+            <option value="banglore">Banglore</option>
+            <option value="delhi">Delhi</option>
+            <option value="chennai">Chennai</option>
+            <option value="hyderabad">Hyderabad</option>
+            <option value="noida">Noida</option>
+            <option value="gurugram">Gurugram</option>
+            <option value="kolkata">Kolkata</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+        </select>
+        
+        </div>
+
+         <div class="check">
+             <div>
+                 <p>work from home</p>
+             </div>
+              <div>
+                <label class="switch">
+                    <input type="checkbox" id="check1" value = "yes" name ="wfh" onclick="category(this.value,this.name)" onchange="change(this.value)">
+                    <span class="slide round"></span>
+                  </label>
+              </div>
+         </div>
+
+         <div class="check">
+            <div>
+                <p>Part-time</p>
+            </div>
+             <div>
+               <label class="switch">
+                   <input type="checkbox" id="check2" value = "yes" name ="parttime" onclick="category(this.value,this.name)" onchange="changepart(this.value)">
+                   <span class="slide round"></span>
+                 </label>
+             </div>
+        </div>
+
+        <div class="range">
+            <div class="content">
+                <p>Desired minimum monthly stipend (₹)</p>
+            </div>
+             <div class="prang">
+                <input type="range" name="REWARDS" min="0" max="10000" value="0" onchange="category(this.value,this.name)" onchange="changepart(this.value)">
+                <div class="rate">
+                    <p>0</p>
+                    <p>2k</p>
+                    <p>4k</p>
+                    <p>6k</p>
+                    <p>8k</p>
+                    <p>10k</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gap">
+
+            <label>Starting from (or after)</label>
+            <input type="date" placeholder="Choose date" name="launch_date" onchange="category(this.value,this.name)"/>
+            
+  
+            <label>Max. duration (months)</label>
+            <select name="duration" id="duration" onchange="category(this.value,this.name)">
+                <option value="" disabled selected hidden>e.g. 1 months</option>
+                <option value="1 Month">1 Month</option>
+                <option value="2 Months">2 Months</option>
+                <option value="3 Months">2 Months</option>
+                <option value="4 Months">4 Months</option>
+                <option value="6 Months">6 Months</option>
+                <option value="12 Months">12 Months</option>
+                <option value="18 Months">18 Months</option>
+                <option value="24 Months">24 Months</option>
+                <option value="36 Months">36 Months</option>
+            </select>
+          
+      </div>
+
+
+      <div class="check">
+        <div>
+            <p>
+                Internships for women <a href="#" data-toggle="tooltip" data-placement="top" title="Will show internships which are also open to women (re)starting their careers"><i class="open_popover ic-16-help-circle" popover_content="Will show internships which will offer a full-time job to the intern at the end of internship depending on performance" data-original-title="" title=""></i></a></p>
+        </div>
+         <div>
+           <label class="switch">
+               <input type="checkbox">
+               <span class="slide round"></span>
+             </label>
+         </div>
+    </div>
+
+    <div class="check">
+        <div>
+            <p>Internships with job offer <a href="#" data-toggle="tooltip" data-placement="top" title="Will show internships which will offer a full-time job to the intern at the end of internship depending on performance"><i class="open_popover ic-16-help-circle" popover_content="Will show internships which will offer a full-time job to the intern at the end of internship depending "></i></a></p>
+        </div>
+         <div>
+           <label class="switch">
+               <input type="checkbox">
+               <span class="slide round"></span>
+             </label>
+         </div>
+    </div>
+
+        <div class="clear">
+         <a href="">Clear all</a>
+        </div>
+
+       <div class="line">
+          <hr style="width:50%">
+          <p>OR</p>
+          <hr style="width:50%">
+       </div>
+
+
+       <div class="filterSearch">
+           <p>Search</p>
+           <div class="flex">
+        <input type="text" placeholder="e.g. MBA, Design, Mumbai">
+        <span class="searchBtn">
+            <button type="button">
+                <i class="icon_search ic-24-search"></i>
+            </button>
+        </span>
+    </div>
+        </div>
+
+        </div>
+        <!--end left slider-->
+
+         <!--left slider-->
+         <div class="RSlider" id="RSlider">
+         <div class="pramo">
+             <!--intrenship section-->
+              <div class="intrenship">
+
+                    <div class="promotion">
+                       <div><h4>Special offer for your college</h4></div>
+                       <span>Offer</span>
+                    </div>
+                    <div class="praP">
+                        <p>Get up to 55%+10% off on certified online trainings</p>
+                        <div><p>Use coupon: <span>COLLEGE10 | </span></p><p class="paragraph"><img src="https://internshala.com/uploads/common/image/5ee490fdaf31e1592037629.svg" style="margin-right: 4px;">Offer ends in <span id="counter"></span></p></div>
+                        <p>Choose from Web Dev, Python, Data Science, Marketing & more</p>
+                    </div>
+             </div>
+
+
+             <div class="details paddingS">
+              <div class="spanCategory">
+                  <span>CareerQuest Certified Trainings</span>
+              </div>
+              <div>
+                  <a href="#">Enroll now <i class="ic-16-chevron-right"></i></a>
+              </div>
+             </div>
+             <!--end intrenship-->
+         </div>
+        </div>
+        <!--end left slider-->
+    </div>
+    <!--slider end-->
+    
+    </main>
+     <footer>
+        <div class="footerDiv">
+            <div class="sizing">
+             <div class="footerFlex">
+              <div>
+                <h5>Internships by places</h5>
+                <div class="list">
+                    <a href="">Internship in India</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Delhi</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Bangalore</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Hyderabad</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Mumbai</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Chennai</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Gurgaon</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Kolkata</a>
+                </div>
+                <div class="list">
+                    <a href="">Virtual internship</a>
+                </div>
+              </div>
+
+              <div>
+                  <!-- First section -->
+                <h5>Internship by Stream</h5>
+                <div class="list">
+                    <a href="">Computer Science Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Electronics Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Mechanical Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Civil Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Marketing Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Chemical Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Finance Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Summer Research Fellowship</a>
+                </div>
+                <div class="list">
+                    <a href="">Campus Ambassador Program</a>
+                </div>
+              </div>
+               <!-- End First section -->
+
+                <!-- Section section -->
+              <div>
+                  <h5>Online Trainings<span>OFFER</span></h5>
+                  <div class="list">
+                    <a href="">Web Development</a>
+                </div>
+                <div class="list">
+                    <a href="">Android App Development</a>
+                </div>
+                <div class="list">
+                    <a href="">Programming with Python</a>
+                </div>
+                <div class="list">
+                    <a href="">Data Science</a>
+                </div>
+                <div class="list">
+                    <a href="">Ethical Hacking</a>
+                </div>
+                <div class="list">
+                    <a href="">Core Java</a>
+                </div>
+                <div class="list">
+                    <a href="">Digital Marketing</a>
+                </div>
+                <div class="list">
+                    <a href="">Advanced Excel</a>
+                </div>
+                <div class="list">
+                    <a href="">Programming with C & C++</a>
+                </div>
+                </div>
+                <!-- End Section section -->
+                <!-- Third section -->
+              <div>
+                  <h5>About CareerQuest</h5>
+                  <div class="list">
+                    <a href="">About us</a>
+                </div>
+                <div class="list">
+                    <a href="">We're hiring</a>
+                </div>
+                <div class="list">
+                    <a href="">Hire interns for your company</a>
+                </div>
+                <div class="list">
+                    <a href="">Team Diary</a>
+                </div>
+                <div class="list">
+                    <a href="">Blog</a>
+                </div>
+                <div class="list">
+                    <a href="">Our Services</a>
+                </div>
+                <div class="list">
+                    <a href="">Terms & Conditions</a>
+                </div>
+                <div class="list">
+                    <a href="">Privacy</a>
+                </div>
+                <div class="list">
+                    <a href="">Contact us</a>
+                </div>
+                 <!-- End Fourth  section -->
+                  </div>
+                 
+             </div>
+             <hr id="hrLine">
+             <div class="copyright">
+                 <div class="media">
+                   <div><button id="playicon"><i class="ic-24-playstore"></i>Get Android App</button></div>
+                   <div><i class="ic-24-instagram"></i></div>
+                   <div><i class="ic-24-twitter"></i></div>
+                   <div><i class="ic-24-youtube"></i></i></div>
+                   <div><i class="ic-24-linkedin"></i></div>
+                 </div>
+                 <div class="copy">
+                    <!-- <div>© Copyright 2021 Internshala</div> -->
+                 </div>
+             </div>
+            </div>
+        </div>
+     </footer>
+    </div>
+
+       <!-- modal-sucess-html-start -->
+
+  <div class="bg-modallast">
+	<div class="modal-contentslast">
+        <div class="modalLeftlast">
+            <img src="./resouces/login_page_student/image/successCheck.svg" alt="check"> 
+        </div>
+        <div class="modalRightlast">
+            <div class="messagelast">Congrats! <span id="sname"> </span> You’ve successfully applied.</div>
+          
+            <div class="closeBtnContlast"><button class="closebtnlast" onclick="(location.href='./intrenshala.html')">close</button></div> 
+        </div> 
+	</div>
+</div> 
+
+
+  <!-- modal-sucess-html-end -->
+
+
+</body>
+<script type="text/javascript" src="./resouces/landing_page/js/script.js"></script>
+<script type="text/javascript" src="./resouces/landing_page/js/banner.js"></script>
+<script type="text/javascript" src="./resouces/landing_page/js/popup.js"></script>
+<script type="text/javascript" src="./resouces/landing_page/js/post.js"></script>
+<script type="text/javascript" src="./resouces/landing_page/js/counter.js"></script>
+<script type="text/javascript" src="./resouces/landing_page/js/filter.js"></script>
+<script>
+    function showmodallast() 
+    {
+        var data = localStorage.getItem('stu_login');
+        if(data != null)
+        {
+            document.getElementById('sname').innerText=`${JSON.parse(data).name}`;
+            document.querySelector('.bg-modallast').style.display = "flex";
+        }
+        else
+        {
+            window.location.href="./student-dashboard-login.html"
+        }
+    };
+</script>
+</html>

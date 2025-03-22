@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerQuest</title>
+    <!-- <link rel="stylesheet" href="imgpho\chetan.css"> -->
+    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+    <link rel="stylesheet" href="./resouces/landing_page/css/style.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/header.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/footer.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/banner.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/responsive.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/popup.css">
+    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+    <link rel="stylesheet" href="https://internshala.com/static/css/home/index.1621498208.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <div class="cont">
+
+        <!--popup-->
+        <div class="overlay">
+        </div>
+            <div class="main-popup">
+            <div class="popup-header">
+            <div id="popup-close-button"><a href="#"></a></div>
+            <ul>
+                <li><a href="#" id="sign-in">Student</a></li>
+                <li><a href="#" id="register">Employer / T&P</a></li>
+            </ul>
+            </div><!--.popup-header-->
+            <div class="popup-content">
+
+            <form class="sign-in" id="stuId">
+                <div id="main2"></div>
+                <div class="googlebtn">  
+                    <button><img src="./resouces/landing_page/image/google_logo.webp"/>Login with Google</button>
+                </div>
+                <div class="crossline">
+                    <hr class="he">
+                    <p>OR</p>
+                    <hr class="he">
+                </div>
+                <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="john@example.com" autocomplete="off">
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" autocomplete="off" placeholder="Must be atleast 6 characters">
+            </div>
+                <div class="link">
+                <a href="">Forgot Password?</a>
+                </div>
+            <div>
+                <input type=button style="background-color: #00a5ec;color: white;" id="submit3" value="Login">
+            </div>
+                <div class="btmclass">
+                    <p>New to Internshala? Register (<a href="./login_student.html"><b>Student</b> </a>/ <a href="./login_emp.html"><b>Company</b></a>)</p>
+                </div>
+            </form>
+
+           
+               <form class="register" id="emplogin">
+                <div id="main"></div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="text" id="log_email" placeholder="john@example.com" autocomplete="off">
+              </div>
+              <div>
+                <label for="password">Password:</label>
+                <input type="password" id="log_password" autocomplete="off" placeholder="Must be atleast 6 characters">
+              </div>
+                <div class="link">
+                <a href="">Forgot Password?</a>
+                </div>
+              <div>
+                <input type="button" id="submit2" value="Login">
+              </div>
+                <div class="btmclass">
+                    <p>New to Internshala? Register (<a href="./login_student.html"><b>Student</b> </a>/ <a href="./login_emp.html                              "><b>Company</b></a>)</p>
+                </div>
+              </form>
+            </div><!--.popup-content-->
+        </div><!--.main-popup-->
+        <!--End popup-->
+
+              <!--responsive Menu bar-->
+      
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="resMenu">
+            <a href="#">Internships</a>
+            <a href="#">Online Trainings <span>CONTEST</span></a>
+            <a href="#">WFH Internships</a>
+            <a href="#">Fresher Jobs</a>
+            <a href="#">Contact Us</a>
+            <hr class="hrLine">
+            <a href="#">Register - As a Student</a>
+            <a href="#">Register - As an Employer</a>
+            <a href="#">Login</a>
+      </div>
+    </div>
+      <!--End responsive Bar-->
+
+    <nav class="header">
+        <div class="height-cont">
+            <div class="flex">
+                <div class="imgflex" >
+                    <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                      <!-- class chetan -->
+                    <a href="./index.html" class="chetan" style="text-decoration: none;">
+                    <!-- <img src="https://internshala.com/static/images/common/new_internshala_logo.svg"/></div> -->
+                    <!-- <img src="imgpho\Career (2).png" alt="" > -->
+                    <H1 class="chetan" style="color: #00a5ec; font-size: 40px; text-decoration: underline; font-weight: bolder; ">Career Quest </H1></div>
+                    </a>
+
+                <div class="btn">
+                <div><a href="./intrenshala.html" target="_blank">Internships</a></div>
+                <div><a href="./training.html" target="_blank">Online Trainings <span class="spanStyle">OFFER</span></a></div>
+                <div><a href="./intrenshala.html" target="_blank">Fresh Jobs</a></div>
+                <!-- newchange .................................................................-->
+                <div><a href="#">Company Login</a></div>
+                <div><button class="btnLogin" id="loginBtn">Login</button></div>
+                <div class="dropdown">
+                <div>
+                    <button class="btnRegister" id="registerbtn">Register  <i class="is_icon_header ic-24-filled-down-arrow"></i></button>
+                    <div class="dropdown-content">
+                    <nav>
+                        <div><a href="./login_student.html">As a Student</a></div>
+                        <div><a href="./login_emp.html">As an employer</a></div>
+                    </nav>
+                        </div>
+                </div>
+            </div> 
+            </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!--search bar implementation-->
+        <div class="search">
+            <div class="size">
+            <input id="searchinput" type="text" placeholder="What are you looking for?">
+            <span class="searchBtn">
+                <button type="button" id="searchbtn">  
+                    <h3>Go</h3>
+                    <i class="icon_search ic-24-search"></i>
+                </button>
+            </span>
+            </div>
+        </div>
+
+        <!--End Search bar Implementation-->
+
+
+        <!--banner Section-->
+        <div id="slideshow">
+            <div>
+            <img src="./resouces/landing_page/image/homepage_banner-1366.png" height="100%" width="100%">
+            </div>
+            <div>
+                <img src="./resouces/landing_page/image/banner-1366.png" height="100%" width="100%">
+            </div>
+        </div>
+        <!--End Banner Section-->
+
+
+        <!--Intrenship section-->
+
+        <div class="intrenship">
+            <div class="innerIntrenship">
+            <h2>Internships</h2>
+            <p>Apply to 10,000+ internships for free</p>
+
+            <!--Popular cities-->
+
+            <div class="category">
+                <h4>Popular cities</h4>
+                <div class="categoryItems">
+                    <div class="divHover">
+                        <a href="./intrenshala.html"><img src="./resouces/landing_page/image/work_from_home.svg">
+                        <div class="text">Work from home</div>
+                        </a>
+                    </div>
+
+                    <div class="divHover">
+                        <a href="./intrenshala.html"><img src="./resouces/landing_page/image/delhi_ncr.svg">
+                        <div class="text">Delhi/NCR</div>
+                    </a>
+                </div>
+
+                <div class="divHover">
+                    <a href="./intrenshala.html"><img src="./resouces/landing_page/image/bangalore.svg">
+                    <div class="text">Bangalore</div>
+                </a>
+                </div>
+
+                <div class="divHover">
+                    <a href="./intrenshala.html"><img src="./resouces/landing_page/image/mumbai.svg">
+                    <div class="text">Mumbai</div>
+                </a>
+                </div>
+
+                <div class="divHover">
+                        <a href="./intrenshala.html"><img src="./resouces/landing_page/image/hyderabad.svg">
+                        <div class="text">Hyderabad</div>
+                        </a>
+                </div>
+
+
+
+                    <div class="divHover">
+                        <a href="./intrenshala.html"><img src="./resouces/landing_page/image/chennai.svg">
+                        <div class="text">Chennai</div>
+                        </a>
+                    </div>
+
+
+                    <div class="divHover">
+                        <a href="./intrenshala.html"><img src="./resouces/landing_page/image/kolkata.svg">
+                        <div class="text">Kolkata</div>
+                    </a>
+                    </div>
+
+                    </div>
+
+                </div>
+                <!--end Popular cities-->
+
+                    <!--Popular categories-->
+
+                    <div class="category">
+                        <h4>Popular categories</h4>
+                        <div class="categoryItems">
+
+                            <div class="divHover">
+                            <a href="./intrenshala.html"><img src="./resouces/landing_page/image/part_time.svg">
+                            <div class="text">Part-time</div>
+                            </a>
+                        </div>
+
+                        <div class="divHover">
+                            <a href="./intrenshala.html"><img src="./resouces/landing_page/image/engineering.svg">
+                            <div class="text">Engineering</div>
+                            </a>
+                        </div>
+                        <div class="divHover">
+                        <a href="./intrenshala.html"><img src="./resouces/landing_page/image/ngo.svg">
+                        <div class="text">NGO</div>
+                        </a>
+                    </div>
+
+                    <div class="divHover">
+                        <a href="./intrenshala.html"><img src="./resouces/landing_page/image/mba.svg">
+                        <div class="text">MBA</div>
+                        </a>
+                    </div>
+
+                    <div class="divHover">
+                            <a href="./intrenshala.html"><img src="./resouces/landing_page/image/design.svg">
+                            <div class="text">Design</div>
+                            </a>
+                            </div>
+
+                        <div class="divHover">
+                            <a href="./intrenshala.html"><img src="./resouces/landing_page/image/science.svg">
+                            <div class="text">Science</div>
+                            </a>
+                        </div>
+
+                        <div class="divHover">
+                            <a href="./intrenshala.html"><img src="./resouces/landing_page/image/media.svg">
+                            <div class="text">Media</div>
+                        </a>
+                        </div>
+                        </div>
+                </div>
+
+                   <!--End Popular categories-->
+
+                   <div class="categoryLink"><a href="">
+                    View all internships <i class="ic-24-arrow-right"></i></a></div>
+            </div>
+        </div>
+
+        <!--end Intrenship section-->
+
+                  <!--training section-->
+
+                  <div class="training">
+                    <div class="innerIntrenship">
+                       <h2>Internshala Trainings</h2>
+                       <p>Learn new-age skills on the go
+                    </p>
+        
+                       <div class="category">
+                           <div class="categoryItems">
+                             <div class="divHover">
+                                 <a href="./training.html"><img src="./resouces/landing_page/image/programming_with_python.svg">
+                                 <div class="text">Programming with Python</div>
+                                </a>
+                            </div>
+        
+                            <div class="divHover">
+                                <a href="./training.html"><img src="./resouces/landing_page/image/digital_marketing.svg">
+                                <div class="text">Digital Marketing</div>
+                               </a>
+                           </div>
+        
+                           <div class="divHover">
+                            <a href="./training.html"><img src="./resouces/landing_page/image/web_development.svg">
+                            <div class="text">Web Development</div>
+                           </a>
+                          </div>
+        
+                          <div class="divHover">
+                            <a href="./training.html"><img src="./resouces/landing_page/image/machine_learning.svg">
+                            <div class="text">Machine Learning</div>
+                           </a>
+                       </div>
+        
+                       <div class="divHover">
+                                 <a href="./training.html"><img src="./resouces/landing_page/image/advanced_excel.svg">
+                                 <div class="text">Advanced Excel</div>
+                                </a>
+                            </div>
+        
+        
+        
+                            <div class="divHover">
+                                 <a href="./training.html"><img src="./resouces/landing_page/image/ethical_hacking.svg">
+                                 <div class="text">Ethical Hacking</div>
+                                </a>
+                            </div>
+        
+        
+                            <div class="divHover">
+                                <a href="./training.html"><img src="./resouces/landing_page/image/autocad.svg">
+                                <div class="text">AutoCAD </div>
+                               </a>
+                           </div>
+
+                           <div class="divHover">
+                            <a href="./training.html"><img src="./resouces/landing_page/image/creative_writing.svg">
+                            <div class="text">Creative Writing</div>
+                           </a>
+                       </div>
+        
+                           
+                            </div>
+        
+                        </div>
+                         
+                         <p>& 52 more...</p>
+                           <div class="categoryLink"><a href="">
+                            View all trainings <i class="ic-24-arrow-right"></i></a></div>
+                    </div>
+                </div>
+        
+                <!--end training section-->
+
+                 <!--Job section-->
+
+                 <div class="training">
+                    <div class="innerIntrenship">
+                       <h2>Fresher Jobs <span>New</span></h2>
+                       <p>Premium fresher jobs on your fingertips</p>
+        
+        
+                       <div class="category">
+                           <div class="categoryItems">
+                             <div>
+                                 <a href=""><img src="./resouces/landing_page/image/ctc.svg">
+                                 <div class="text width">Minimum CTC of 3 LPA</div>
+                                </a>
+                            </div>
+        
+                            <div>
+                                <a href=""><img src="./resouces/landing_page/image/dream.svg">
+                                <div class="text width">Dream companies</div>
+                               </a>
+                           </div>
+        
+                           <div>
+                            <a href=""><img src="./resouces/landing_page/image/verified.svg">
+                            <div class="text width">100% verified jobs</div>
+                           </a>
+                          </div>
+                            </div>
+        
+                        </div>
+                         <!--end Popular cities-->
+                           <div class="categoryLink"><a href="">
+                            View all Jobs <i class="ic-24-arrow-right"></i></a></div>
+                    </div>
+                </div>
+        
+                <!--end Job section-->
+     </main>
+     <footer>
+        <div class="footerDiv">
+            <div class="sizing">
+             <div class="footerFlex">
+              <div>
+                <h5>Internships by places</h5>
+                <div class="list">
+                    <a href="">Internship in India</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Delhi</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Bangalore</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Hyderabad</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Mumbai</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Chennai</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Gurgaon</a>
+                </div>
+                <div class="list">
+                    <a href="">Internship in Kolkata</a>
+                </div>
+                <div class="list">
+                    <a href="">Virtual internship</a>
+                </div>
+              </div>
+
+              <div>
+                  <!-- First section -->
+                <h5>Internship by Stream</h5>
+                <div class="list">
+                    <a href="">Computer Science Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Electronics Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Mechanical Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Civil Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Marketing Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Chemical Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Finance Internship</a>
+                </div>
+                <div class="list">
+                    <a href="">Summer Research Fellowship</a>
+                </div>
+                <div class="list">
+                    <a href="">Campus Ambassador Program</a>
+                </div>
+              </div>
+               <!-- End First section -->
+
+                <!-- Section section -->
+              <div>
+                  <h5>Online Trainings<span >OFFER</span></h5>
+                  <div class="list">
+                    <a href="">Web Development</a>
+                </div>
+                <div class="list">
+                    <a href="">Android App Development</a>
+                </div>
+                <div class="list">
+                    <a href="">Programming with Python</a>
+                </div>
+                <div class="list">
+                    <a href="">Data Science</a>
+                </div>
+                <div class="list">
+                    <a href="">Ethical Hacking</a>
+                </div>
+                <div class="list">
+                    <a href="">Core Java</a>
+                </div>
+                <div class="list">
+                    <a href="">Digital Marketing</a>
+                </div>
+                <div class="list">
+                    <a href="">Advanced Excel</a>
+                </div>
+                <div class="list">
+                    <a href="">Programming with C & C++</a>
+                </div>
+                </div>
+                <!-- End Section section -->
+                <!-- Third section -->
+              <div>
+                  <h5>About CodeQuest</h5>
+                  <div class="list">
+                    <a href="">About us</a>
+                </div>
+                <div class="list">
+                    <a href="">We're hiring</a>
+                </div>
+                <div class="list">
+                    <a href="">Hire interns for your company</a>
+                </div>
+                <div class="list">
+                    <a href="">Team Diary</a>
+                </div>
+                <div class="list">
+                    <a href="">Blog</a>
+                </div>
+                <div class="list">
+                    <a href="">Our Services</a>
+                </div>
+                <div class="list">
+                    <a href="">Terms & Conditions</a>
+                </div>
+                <div class="list">
+                    <a href="">Privacy</a>
+                </div>
+                <div class="list">
+                    <a href="">Contact us</a>
+                </div>
+                 <!-- End Fourth  section -->
+                  </div>
+                 
+             </div>
+             <hr id="hrLine">
+             <div class="copyright">
+                 <div class="media">
+                   <div><button id="playicon"><i class="ic-24-playstore"></i>Get Android App</button></div>
+                   <div><i class="ic-24-instagram"></i></div>
+                   <div><i class="ic-24-twitter"></i></div>
+                   <div><i class="ic-24-youtube"></i></i></div>
+                   <div><i class="ic-24-linkedin"></i></div>
+                 </div>
+                 <div class="copy">
+                    <!-- <div>© Copyright 2021 Internshala</div> -->
+                 </div>
+             </div>
+            </div>
+        </div>
+     </footer>
+    </div>
+
+
+       <!-- modal-search-html-start -->
+
+    <div class="bg-modal">
+        <div class="modal-contents">
+            <div class="modal-body">
+                <div class="modal-body-header">
+                  <div class="looking-for-cont">
+                    <h6>I'm looking for Internship / Fresher Jobs in</h6>
+                  </div>
+                   <div> <button class="closebtnn">x</button></div>
+                </div>
+                <div class="internship-cont">
+                  <div class="modal-searchbar">
+                    <form id="search-btn-form">
+                      <div class="input-group">
+                        <input type="text" class="modal-input" placeholder="eg. MBA, Android, Mumbai, etc" id="modal-input">
+                        <span class="search-btn-cont">
+                          <button type="button" id="modal-search-btn">Go</button>
+                        </span>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="popular-cont">
+                    <div class="pop-heading">Popular Cities</div>
+                    <div class="pop-body">
+                      <a href="./intrenshala.html" class="pop-item">Work from home</a>
+                      <a href="./intrenshala.html" class="pop-item">Delhi/NCR</a>
+                      <a href="./intrenshala.html" class="pop-item">Bangalore</a>
+                      <a href="./intrenshala.html" class="pop-item">Mumbai</a>
+                      <a href="./intrenshala.html" class="pop-item">Hyderabad</a>
+                      <a href="./intrenshala.html" class="pop-item">Chennai</a>
+                      <a href="./intrenshala.html" class="pop-item">Kolkata</a>
+                    </div>
+                  </div>
+                  <div class="popular-cont">
+                    <div class="pop-heading">Popular Cities</div>
+                    <div class="pop-body">
+                      <a href="./intrenshala.html" class="pop-item">Part-time</a>
+                      <a href="./intrenshala.html" class="pop-item">Engineering</a>
+                      <a href="./intrenshala.html" class="pop-item">MBA</a>
+                      <a href="./intrenshala.html" class="pop-item">NGO</a>
+                      <a href="./intrenshala.html" class="pop-item">Design</a>
+                      <a href="./intrenshala.html" class="pop-item">Science</a>
+                      <a href="./intrenshala.html" class="pop-item">Media</a>
+                      <a href="./intrenshala.html" class="pop-item">Humanities</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div> 
+        </div>
+    </div> 
+    
+
+
+    <!-- modal-search-html-end -->
+
+
+</body>
+<script type="text/javascript" src="./resouces/landing_page/js/script.js"></script>
+<script type="text/javascript" src="./resouces/landing_page/js/banner.js"></script>
+<script type="text/javascript" src="./resouces/landing_page/js/popup.js"></script>
+<script type="text/javascript" src="./resouces/landing_page/js/filter.js"></script>
+<script>
+    
+    document.getElementById('searchinput').addEventListener("click", function(){
+          document.querySelector('.bg-modal').style.display = "flex";
+
+    });
+    document.getElementById('searchbtn').addEventListener("click", function(){
+          document.querySelector('.bg-modal').style.display = "flex";
+
+    });
+    
+    document.querySelector('.closebtnn').addEventListener("click", function() {
+        document.querySelector('.bg-modal').style.display = "none";
+    });
+
+    document.getElementById('modal-search-btn').addEventListener("click", function() {
+       window.location.href='./intrenshala.html'
+    });
+</script>
+</html>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships | Summer Internship 2021</title>
+    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+    <link rel="stylesheet" href="./resouces/login_page_employer/css/style.css">
+    <link rel="stylesheet" href="./resouces/login_page_employer/css/header.css">
+    <link rel="stylesheet" href="./resouces/landing_page/css/popup.css">
+    <link rel="stylesheet" href="./resouces/login_page_employer/css/footer.css">
+    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+    <link rel="stylesheet" href="https://internshala.com/static/css/home/index.1621498208.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- header section- start -->
+     <nav class="header">
+        <div class="height-cont">
+            <div class="navFlex">
+                <div class="imgflex"><a href="index.html"><img src="https://internshala.com/static/images/common/new_internshala_logo.svg"/></a></div>
+                <div class="btn">
+                    <div><a href="./newpost.html">Post Internship</a></div>
+                    <div><a href="./newpost.html">Post Fresher Job<span class="spanStyle">NEW</span></a></div>
+                    <div><a href="./training.html" target="_blank">Online Trainings</a></div>
+                    <div><button class="btnLogin" id="loginBtn">Login</button></div>
+                </div> 
+            </div>
+        </div>
+     </nav>
+     <!-- header section- start -->
+
+      <!--popup-->
+      <div class="overlay">
+      </div>
+          <div class="main-popup">
+           
+              <div id="popup-close-button"><a href="#"></a></div>
+             
+          <div class="popup-content" id="main">
+          <form class="sign-in" style="padding-top: 8%;" id="emplogin">
+              <div>
+                <label for="email">Email:</label>
+                <input type="text" id="log_email" placeholder="john@example.com" autocomplete="off">
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="log_password" autocomplete="off" placeholder="Must be atleast 6 characters">
+            </div>
+              <div class="link">
+              <a href="">Forgot Password?</a>
+              </div>
+            <div>
+              <input type="button" id="submit" value="Login">
+            </div>
+              <div class="btmclass">
+                  <p>New to Internshala? Register (<a href="./login_student.html"><b>Student</b> </a>/ <a href="./login_emp.html"><b>Company</b></a>)</p>
+              </div>
+            </form>
+          </div><!--.popup-content-->
+      </div><!--.main-popup-->
+      <!--End popup-->
+
+
+     <!-- middle section- start -->
+
+    <main>
+        <div id="middle">
+            <div id="max-width-cont">
+                <div class="midCont">
+                    <!-- middle area, over the bg img text, for left side--start -->
+                <div class="midText">
+                    <p>Hire the best interns</p>
+                    <p>Register and post your internship for free now!</p>
+                    <p>4 Mn+ internships seekers from 30,000+ colleges across India</p>
+                </div>
+                <!-- middle area, over the bg img text, for left side--end -->
+
+                <!-- middle area, right side--start -->
+                <div id="rightSide">
+                    <div id="formCont">
+                        <!-- form --start -->
+                        <div class="form" id="emp_form">
+                            <!-- form section 1 -->
+                            <div class="formGroup">
+                                <label for="email">Official Email Id </label>
+                                <div>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="name@company_name.com">
+                                </div>
+                            </div>
+                            <!-- form section 2 -->
+                           <div class="formGroup">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Minimum 6 characters">
+                            </div>
+                            <!-- form section 3 -->
+                           <div class="nameRow">
+                                <div class="formCol" id="first_name_container">
+                                    <div class="formGroup">
+                                        <label for="first_name">First Name</label>
+                                        <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Your First Name">
+                                    </div>
+                                </div>
+                                <div class="formCol" id="last_name_container">
+                                    <div class="formGroup">
+                                        <label for="last_name">Last Name</label>
+                                        <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Your Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form section 4 -->
+                           <div class="formGroup">
+                                <label for="phone_primary">Mobile Number</label>
+                                <div class="nameRow" id="phone_container">
+                                    <div class="formCol col-3">
+                                        <input type="text" disabled="disabled" class="form-control" id="country_code" name="country_code" value="+91">
+                                    </div>
+                                    <div class="formCol col-9">
+                                        <input type="tel" class="form-control" id="phone_primary" minlength="10" maxlength="10" name="phone_primary" placeholder="10 digit mobile number">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form section 5-extras -->
+                            <div id="jobRegExtra" >
+                                <div class="label_toc">
+                                    <span>
+                                        By registering, you agree to our <a href="#" >Terms and Conditions</a>.
+                                    </span>
+                                </div>
+                                <div id="internship_registration_button_container">
+                                    <div id="job_employer_registration_button">
+                                        <button type="submit" class="btn btn-primary" id="emp_res">Register Now</button>
+                                    </div>
+                                    <div class="label_toc_2">
+                                        <a href="/employer/help_center_faq/16">
+                                            <span id="job_toc">
+                                                Have a question?
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form section 5-extras-end -->
+                        </div>
+                        <!-- form --end -->
+                    </div>
+                </div>
+                <!-- middle area, right side--start -->
+                </div>
+            </div>
+        </div>
+        <div class="hiring">
+            <div class="heading"><p>Hire interns in 3 simple steps</p></div>
+            <div class="hireCardCont">
+                <div class="hireCard">
+                    <img src="./resouces/login_page_employer/image/hire1.png" alt="">
+                    <p>1. Register</p>
+                    <p>Get started by creating your account</p>
+                </div>
+                <div class="hireCard">
+                    <img src="./resouces/login_page_employer/image/hire2.png" alt="">
+                    <p>2. Post</p>
+                    <p>Post internships for any profile and location</p>
+                </div>
+                <div class="hireCard">
+                    <img src="./resouces/login_page_employer/image/hire3.png" alt="">
+                    <p>3. Hire</p>
+                    <p>Screen and hire at your fingertips</p>
+                </div>
+    </div>
+        </div>
+        <!-- company div including testimonials--start -->
+        <div class="company">
+            <div class="heading"><p>Trusted by 1 Lac+ companies</p></div>
+
+            <!-- ------------------imported carousel code-start---------------- -->
+
+                 <div id="brands-parent-div">
+<div id="brands-div">
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--slide images start-->
+        <div class="slide first">
+          <div class="carousel-cont">
+      <div class="carousel-inner">
+        <div class="item-top">
+          <div class="img">
+            <img src="./resouces/login_page_employer/image/harikrushna.png" alt="image">
+          </div>
+          <div class="desc">
+            <div class="name">
+              <h6>Hrikrushna</h6> | Kotak Mahindra
+            </div>
+            <div class="linkedin">
+              <a target="_blank" href="./resouces/login_page_employer/image/linked_in.svg">
+              <img src="https://internshala.com/static/images/registration/employer/internship/testimonials/linked_in.svg" alt="linkedin"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item-content">
+          "This is an amazing platform to get a quality pool
+          of candidates in the stipulated timeframe.
+          We have very few digital platforms to source
+          interns round the year, and Internshala is undoubtedly the
+          best amongst all.""
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="slide">
+          <div class="carousel-cont">
+      <div class="carousel-inner">
+        <div class="item-top">
+          <div class="img">
+            <img src="./resouces/login_page_employer/image/rakhee.png" alt="image">
+          </div>
+          <div class="desc">
+            <div class="name">
+              <h6>Rakhee Mane</h6> | Disney
+            </div>
+            <div class="linkedin">
+              <a target="_blank" href="./resouces/login_page_employer/image/linked_in.svg">
+              <img src="https://internshala.com/static/images/registration/employer/internship/testimonials/linked_in.svg" alt="linkedin"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item-content">
+          "My experience of hiring interns through Internshala
+            was very good. I am really impressed with 
+            the service provided and I could close the internship quickly."
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="slide">
+          <div class="carousel-cont">
+      <div class="carousel-inner">
+        <div class="item-top">
+          <div class="img">
+            <img src="./resouces/login_page_employer/image/manish.png" alt="image">
+          </div>
+          <div class="desc">
+            <div class="name">
+              <h6>Manish Nichani</h6> | Airbnb
+            </div>
+            <div class="linkedin">
+              <a target="_blank" href="./resouces/login_page_employer/image/linked_in.svg">
+              <img src="https://internshala.com/static/images/registration/employer/internship/testimonials/linked_in.svg" alt="linkedin"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item-content">
+          "Internshala is doing a great job of making life 
+          easier for employers. The response that I got from 
+          your platform was very impressive. It helped me 
+          identify and hire some incredibly talented folks for many profiles."
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="slide">
+          <div class="carousel-cont">
+      <div class="carousel-inner">
+        <div class="item-top">
+          <div class="img">
+            <img src="./resouces/login_page_employer/image/shraddha.png">
+          </div>
+          <div class="desc">
+            <div class="name">
+              <h6>Shraddha</h6> | Teach For India
+            </div>
+            <div class="linkedin">
+              <a target="_blank" href="./resouces/login_page_employer/image/linked_in.svg">
+              <img src="https://internshala.com/static/images/registration/employer/internship/testimonials/linked_in.svg" alt="linkedin"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item-content">
+            "We look for bright, committed, and value driven
+             individuals. Internshala has been a great partner
+              in this endeavour and has always offered a variety
+               of applicants for a wide range of roles."
+        </div>
+      </div>
+    </div>
+        </div>
+        <div class="slide">
+          <div class="carousel-cont">
+      <div class="carousel-inner">
+        <div class="item-top">
+          <div class="img">
+            <img src="./resouces/login_page_employer/image/arvind.png" alt="image">
+          </div>
+          <div class="desc">
+            <div class="name">
+              <h6>Arvind K</h6> | Achieve Thyself
+            </div>
+            <div class="linkedin">
+              <a target="_blank" href="./resouces/login_page_employer/image/linked_in.svg">
+              <img src="https://internshala.com/static/images/registration/employer/internship/testimonials/linked_in.svg" alt="linkedin"></a>
+            </div>
+          </div>
+        </div>
+        <div class="item-content">
+            "I didn't expect such a quick response to my requirements.
+             Thanks to Internshala, I could hire interns within a day.
+              This is a boon for anyone looking for interns and also for
+             the people who want to build their repertoire of work"
+        </div>
+      </div>
+    </div>
+        </div>
+        <!--slide images end-->
+        
+      </div>
+      
+    </div>
+</div>
+    <!--image slider end-->
+
+    <div class="brands">
+        <div id="kotak" class="kotak-off brand-logo"></div>
+        <div id="disney" class="disney-off brand-logo"></div>
+        <div id="airbnb" class="airbnb-off brand-logo"></div>
+        <div id="teach" class="teach-off brand-logo"></div>
+        <div id="arc" class="arc-off brand-logo"></div>
+    </div>
+</div>
+
+            <!-- ------------------imported carousel code-start---------------- -->
+
+        </div>
+        <!-- company div including testimonials--end -->
+        <div class="register">
+            <button>Register Now</button>
+        </div>
+
+    </main>
+
+    <!-- middle section- end -->
+
+    <!-- footer section- start -->
+
+    <footer>
+        <div class="footerDiv">
+            <div class="elements">
+                <div class="list">
+                    <a href="">About us</a>
+                </div>
+                <div class="list">
+                    <a href="">We're hiring</a>
+                </div>
+                <div class="list">
+                    <a href="">Employer resouces</a>
+                </div>
+                <div class="list">
+                    <a href="">Our services</a>
+                </div>
+                <div class="list">
+                    <a href="">Terms & conditions</a>
+                </div>
+                <div class="list">
+                    <a href="">Privacy</a>
+                </div>
+                <div class="list">
+                    <a href="">Refund policy</a>
+                </div>
+                <div class="list">
+                    <a href="">Contact us</a>
+                </div>
+            </div>  
+        </div>
+        <div class="copyright">
+            <div>© Copyright 2021 Internshala</div>
+        </div>
+    </footer>
+
+    <!-- footer section- end -->
+</div>
+</body>
+<script type="text/javascript" src="./resouces/landing_page/js/popup.js"></script>
+</html>
+<script>
+/*script for toggeling brand logo color - start*/
+    let kotak = document.getElementById('kotak')
+    kotak.addEventListener('click', function(colored){
+        colored.target.classList.toggle('kotak-on');
+    })
+    let diseny = document.getElementById('disney')
+    disney.addEventListener('click', function(colored){
+        colored.target.classList.toggle('disney-on');
+    })
+    let airbnb = document.getElementById('airbnb')
+    airbnb.addEventListener('click', function(colored){
+        colored.target.classList.toggle('airbnb-on');
+    })
+    let teach = document.getElementById('teach')
+    teach.addEventListener('click', function(colored){
+        colored.target.classList.toggle('teach-on');
+    })
+    let arc = document.getElementById('arc')
+    arc.addEventListener('click', function(colored){
+        colored.target.classList.toggle('arc-on');
+    })
+/*script for toggeling brand logo color - end*/
+
+// sliding code - starts
+    let first = document.querySelector('.first')
+
+    kotak.addEventListener('click', function(){
+        first.style.marginLeft='0'
+    })
+    diseny.addEventListener('click', function(){
+        first.style.marginLeft='-20%'
+    })
+    airbnb.addEventListener('click', function(){
+        first.style.marginLeft='-40%'
+    })
+    teach.addEventListener('click', function(){
+        first.style.marginLeft='-60%'
+    })
+    arc.addEventListener('click', function(){
+        first.style.marginLeft='-80%'
+    })
+
+// sliding code - ends
+
+</script>
+
+<script>
+  var arr = JSON.parse(localStorage.getItem('emplogin'));
+  var empButton = document.getElementById("emp_res");
+  empButton.addEventListener('click',addFunction);
+
+  function addFunction()
+  {
+    
+    
+    var empForm = document.getElementById("emp_form");
+    var email = empForm.querySelector('input[id="email"]');
+    var Password = empForm.querySelector('input[id="Password"]');
+    var first_name = empForm.querySelector('input[id="first_name"]');
+    var last_name = empForm.querySelector('input[id="last_name"]');
+    var phone_primary = empForm.querySelector('input[id="phone_primary"]');
+    function checkEmail(email)
+    {
+      if(arr)
+      {
+
+        for(var i=0;i<arr.length;i++)
+        {
+
+            if(arr[i].email == email)
+            {
+              return true;
+            }
+            
+        }
+        return false;
+      }
+      return false;
+            
+    }
+
+    function checkmobile(mobile)
+    {
+      if(arr)
+      {
+
+        for(var i=0;i<arr.length;i++)
+        {
+
+            if(arr[i].phone_primary == mobile)
+            {
+              return true;
+            }
+            
+        }
+        return false;
+      }
+      return false;
+            
+    }
+
+    var sm = empForm.querySelectorAll('input');
+    var value = true;
+    sm.forEach(function(el)
+    {
+      var nu = el;
+      ssp = document.getElementById(nu.id);
+      var parent =ssp.parentElement;
+      var p = document.createElement('p');
+      if(ssp.value == "")
+        {
+          ssp.style.border="1px solid red";
+          p.setAttribute('class','help-block');
+          var sn = parent.querySelector('p');
+          if(sn == null)
+          {
+            
+            p.innerText="This fiels is requirded";
+            p.style.color="red";
+            p.style.marginTop="10px";
+            p.style.fontSize="12px";
+            parent.append(p);
+            
+            
+          }
+          value = false;
+          
+        }
+        else if(checkEmail(email.value) && nu.name == "email")
+        {
+            
+                var emp = ssp.parentElement.querySelector('p');
+                if(emp)
+                {
+                  emp.remove();
+                }
+                ssp.style.border="1px solid red";
+                p.innerText="Email Alraedy Taken";
+                p.style.color="red";
+                p.setAttribute('class','help-block');
+                p.style.marginTop="10px";
+                p.style.fontSize="12px";
+                parent.append(p);
+                value = false;
+               
+             
+        }
+        else if(checkmobile(phone_primary.value) && nu.name == "phone_primary")
+        {
+            
+                var emp = ssp.parentElement.querySelector('p');
+                if(emp)
+                {
+                  emp.remove();
+                }
+                ssp.style.border="1px solid red";
+                p.innerText="Phone No. Alraedy Taken";
+                p.style.color="red";
+                p.setAttribute('class','help-block');
+                p.style.marginTop="10px";
+                p.style.fontSize="12px";
+                parent.append(p);
+                value = false;
+               
+             
+        }
+        else
+        {
+                var emp = ssp.parentElement.querySelector('p');
+                if(emp)
+                {
+                  emp.remove();
+                }
+                ssp.style.border="1px solid green";   
+                
+        }
+
+
+    });
+
+    if(value)
+    {
+
+       var empDeatails = 
+       {
+          email:email.value,
+          Password:password.value,
+          name : first_name.value+" "+last_name.value,
+          phone_primary:phone_primary.value
+       }
+       
+       let arr;
+       arr = localStorage.getItem('emplogin');
+       if(arr == null)
+       {
+          arr = [];
+       }
+       else
+       {
+          arr = JSON.parse(arr);
+       }
+
+       arr.push(empDeatails);
+       localStorage.setItem('emplogin',JSON.stringify(arr));
+              
+       var main = document.getElementById("emp_form");
+       let p = document.createElement('p');
+       p.style.textAlign="center";
+       p.style.paddingTop="20px";
+       p.style.color="green";
+       p.innerHTML="<b>You have successfully Registered :)</b>";
+       main.insertBefore(p,main.childNodes[0]);
+      
+       setTimeout(function() {
+        main.querySelector('p').remove();
+       }, 3000);
+        
+        setTimeout(function() {
+        location.reload();
+       }, 5000);
+
+       email.value="";
+       password.value="";
+       first_name.value="";
+       last_name.value="";
+       phone_primary.value="";
+
+       
+     
+
+    }
+  }
+
+
+</script>
+
+
+<script>
+  var arr1 = JSON.parse(localStorage.getItem('emplogin'));
+  var empButton = document.getElementById("submit");
+  empButton.addEventListener('click',addFunction2);
+
+  function addFunction2()
+  {
+    
+    var empForm2 = document.getElementById("emplogin");
+    var email = empForm2.querySelector('input[id="log_email"]');
+    var password = empForm2.querySelector('input[id="log_password"]');
+    
+    
+    
+    var sm = empForm2.querySelectorAll('input');
+    var value = true;
+    sm.forEach(function(el)
+    {
+      var nu = el;
+
+      ssp = document.getElementById(nu.id);
+      var parent =ssp.parentElement;
+      var p = document.createElement('p');
+      if(ssp.value == "")
+        {
+          ssp.style.border="1px solid red";
+          p.setAttribute('class','help-block');
+          var sn = parent.querySelector('p');
+          if(sn == null)
+          {
+            
+            p.innerText="This fiels is requirded";
+            p.style.color="red";
+            p.style.marginLeft="13px";
+            p.style.fontSize="12px";
+            parent.append(p);
+            
+            
+          }
+          value = false;
+          
+        }
+        else
+        {
+                var emp = ssp.parentElement.querySelector('p');
+                if(emp)
+                {
+                  emp.remove();
+                }
+                ssp.style.border="1px solid green";   
+                
+        }
+
+
+    });
+
+    if(value)
+    {
+       var isValidate = false;
+        var num = arr1.forEach(function(va)
+        {
+             if(va.email == email.value && va.Password == password.value)
+             {
+                isValidate = true;
+                localStorage.setItem('login',JSON.stringify({email:email.value,name:va.name}))
+                setTimeout(function () {
+                  window.location.href="./newpost.html";
+                }, 2000);
+                
+              }
+              
+        });
+        var main = document.getElementById("main");
+        let p = document.createElement('p');
+        if(isValidate)
+        {
+          p.style.textAlign="center";
+          p.style.paddingTop="20px";
+          p.style.color="green";
+          p.innerHTML="<b>You have successfully Login :)</b>";
+        }
+        else
+        {
+          p.style.textAlign="center";
+          p.style.paddingTop="20px";
+          p.style.color="red";
+          p.innerHTML="<b>Invalid Credentials (:</b>"; 
+        }
+       main.insertBefore(p,main.childNodes[0]);
+      
+       setTimeout(function() {
+        main.querySelector('p').remove();
+       }, 5000);
+      //  var empDeatails = 
+      //  {
+      //     email:email.value,
+      //     Password:password.value,
+      //     name : first_name.value+" "+last_name.value,
+      //     phone_primary:phone_primary.value
+      //  }
+
+      //   console.log(empDeatails);
+       
+      //  let arr;
+      //  arr = localStorage.getItem('emplogin');
+      //  if(arr == null)
+      //  {
+      //     arr = [];
+      //  }
+      //  else
+      //  {
+      //     arr = JSON.parse(arr);
+      //  }
+
+      //  arr.push(empDeatails);
+      //  localStorage.setItem('emplogin',JSON.stringify(arr));
+       
+      //  email.value="";
+      //  password.value="";
+
+       
+     
+
+    }
+  }
+</script>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships | Summer Internship 2021</title>
+    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+    <link rel="stylesheet" href="./resouces/login_page_student/css/style.css">
+    <link rel="stylesheet" href="./resouces/login_page_student/css/header.css">
+    <link rel="stylesheet" href="./resouces/login_page_student/css/footer.css">
+    <link rel="icon" href="https://internshala.com//favicon.ico?v=5" />
+    <link rel="stylesheet" href="https://internshala.com/static/css/home/index.1621498208.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- header section- start -->
+     <nav class="header">
+        <div class="height-cont">
+            <div class="flex">
+                <div class="imgflex"> <a href="./index.html"><img src="https://internshala.com/static/images/common/new_internshala_logo.svg" /></a> 
+                </div>
+                <div class="btn">
+                    <div><a href="./intrenshala.html">Internships</a></div>
+                    <div><a href="./training.html" target="_blank">Online Trainings <span class="spanStyle">CONTEST</span></a></div>
+                    <div><a href="./intrenshala.html">Fresh Jobs</a></div>
+                    <div class="dropdown">
+                        <div>
+                            <button class="btnRegister" id="registerbtn">Login/Register<i
+                                    class="is_icon_header ic-24-filled-down-arrow"></i></button>
+                            <div class="dropdown-content">
+                                <nav>
+                                    <div><a href="./login_student.html">Register as a Student</a></div>
+                                    <div><a href="./login_emp.html">Register as an employer</a></div>
+                                    <div><a href="student-dashboard-login.html">Login</a></div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+     <!-- header section- end -->
+
+     <!-- middle section- start -->
+
+    <main>
+        <div id="middle">
+            <div id="max-width-cont">
+                <div class="midCont">
+                    <!-- middle area, over the bg img text, for left side--start -->
+                <div class="midText">
+                    <p>A <span id="freeText">free</span> ride to your dream career</p>
+                    <p>Register and apply to 10000+ opportunities</p>
+                    <div id="checkbox-cont">
+                      <div class="checkBox"><img src="./resouces/login_page_student/image/check_box.svg" alt=""> <p>Internships</p></div>
+                      <div class="checkBox"><img src="./resouces/login_page_student/image/check_box.svg" alt=""><p>Fresher jobs</p></div>
+                      <div class="checkBox"><img src="./resouces/login_page_student/image/check_box.svg" alt=""><p>Work from home jobs</p></div>
+                    </div>
+                </div>
+                <!-- middle area, over the bg img text, for left side--end -->
+
+                <!-- middle area, right side--start -->
+                <div id="rightSide">
+                    <div id="formCont">
+                        <!-- form --start -->
+                        <div class="form">
+                            <!-- form section 1 google button -->
+
+                            <div id="google-btn-cont">
+                              <div class="google-img-cont">
+                                <img src="./resouces/login_page_student/image/google_logo-min.png" alt="google">
+                              </div>
+                              <div class="google-content">Sign Up with Google</div>
+                            </div>
+                            <div class="or-cont">
+                              <div class="or"><p>OR</p></div>
+                              <div class="border"></div>
+                            </div>
+                            <!-- form section 2 -->
+                            <div class="formItem">
+                                <label for="email">Email</label>
+                                <div>
+                                    <input type="email" class="formControl" id="email" name="email" placeholder="name@company_name.com">
+                                    <p id="error-email"></p>
+                                </div>
+                            </div>
+                            <!-- form section 3 -->
+                           <div class="formItem">
+                                <label for="password">Password</label>
+                                <input type="password" class="formControl" id="password" name="password" placeholder="Minimum 6 characters">
+                                <p id="error-password"></p>
+                            </div>
+                            <!-- form section 4 -->
+                           <div class="nameSecCont">
+                                <div class="nameSec">
+                                    <div class="formItem">
+                                        <label for="first_name">First Name</label>
+                                        <input type="text" class="formControl" id="first_name" name="first_name" placeholder="Your First Name">
+                                        <p id="error-name"></p>
+                                    </div>
+                                </div>
+                                <div class="nameSec">
+                                    <div class="formItem">
+                                        <label for="last_name">Last Name</label>
+                                        <input type="text" class="formControl" id="last_name" name="last_name" placeholder="Your Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form section 5-extras -->
+                            <div id="formExtras" style="margin-top: 16px">
+                                <div class="label_toc">
+                                    <span style="color: #333333; line-height: 1.57; font-weight: 400">
+                                        By registering, you agree to our <a href="#" target="_blank">Terms and Conditions</a>.
+                                    </span>
+                                </div>
+                                <div id="student-signup-btn-cont" style="display: block">
+                                    <div id="student-signup-btn">
+                                        <!--this goes in button bellow- data-modal-target="#modal" -->
+                                        <button onclick="return studentSignup()"  type="submit" class="btn btnSignup" id="studentSignup-Btn">Sign Up</button>
+                                    </div>
+                                    <div class="labelExtra">
+                                        <!-- <a href="#"> -->
+                                          <p id="already-reg">Already registered? <a href="./student-dashboard-login.html"> <span> Login </span></a></p>   
+                                        <!-- </a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- form section 4-extras-end -->
+                        </div>
+                        <!-- form --end -->
+                    </div>
+                </div>
+                <!-- middle area, right side--start -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <!-- modal-sucess-html-start -->
+
+ <div class="bg-modal">
+	<div class="modal-contents">
+        <div class="modalLeft">
+            <img src="./resouces/login_page_student/image/successCheck.svg" alt="check"> 
+        </div>
+        <div class="modalRight">
+            <div class="message">An email with a verification link has been sent to your email id. Please click on that link to confirm your registration. Check your spam folder or promotions tab too.</div>
+            <!-- put login url in close button -->
+            <div class="closeBtnCont"><button class="closebtn" onclick="(location.href='./student-dashboard-login.html')">close</button></div> 
+        </div> 
+	</div>
+</div>
+
+
+  <!-- modal-sucess-html-end -->
+
+<!-- ------------------------------------------------------middle section- end---------------------------------------------------------------------- -->
+
+<!-- -----------------------------------------------------footer section- start------------------------------------------------------------------------- -->
+
+    <footer>
+        <div class="footerDiv">
+            <div class="sizing">
+                <div class="footerFlex">
+                    <div id="collasp-div">
+                        <h5>Internships by places</h5>
+                        <div class="list">
+                            <a href="">Internship in India</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Internship in Delhi</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Internship in Banglore</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Internship in Hyderbad</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Internship in Mumbai</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Internship in Chennai</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Internship in Gurgaon    </a>
+                        </div>
+                        <div class="list">
+                            <a href="">Internship in Kolkata</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Virtual Internship</a>
+                        </div>
+                    </div>
+                    <div id="collasp-div">
+                        <h5>Internship by Stream</h5>
+                        <div class="list">
+                            <a href="">Computer Science Internship</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Electronics Internship</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Mechanical Internship</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Civil Internship</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Marketing Internship</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Chemical Internship</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Finance Internship</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Summer Research Fellowship</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Camppus Ambassador Program</a>
+                        </div>
+                    </div>
+                    <div id="collasp-div">
+                        <div id="offerSec"><div><h5>Online Trainings</h5></div> <div id="offer">OFFER</div></div> 
+                        <div class="list">
+                            <a href="">Web Development</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Android App Development</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Programming with Python</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Data Science</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Ethical Hacking</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Core Java</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Digital Marketing</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Advanced Excel</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Programming with C & C++</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 id="collasp-div">About Internshala</h5>
+                        <div class="list">
+                            <a href="">About us</a>
+                        </div>
+                        <div class="list">
+                            <a href="">We're hiring</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Hire interns for your company</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Team Diary</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Blog</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Our Services</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Terms & Conditions</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Privacy</a>
+                        </div>
+                        <div class="list">
+                            <a href="">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+       
+                <!-- <hr id="hrLine"> -->
+                <div class="copyright">
+                    <div class="media">
+                        <div><button id="playicon"><i class="ic-24-playstore"></i>Get Android App</button></div>
+                        <div><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                        <div><i class="ic-24-instagram"></i></div>
+                        <div><i class="ic-24-twitter"></i></div>
+                        <div><i class="ic-24-youtube"></i></i></div>
+                        <div><i class="ic-24-linkedin"></i></div>
+                    </div>
+                    <div class="copy">
+                        <div>© Copyright 2021 Internshala</div>
+                    </div>
+                </div>
+                 </div>
+            
+    </footer>
+<!-- ------------------------------------------------------footer section- end------------------------------------------------------------------------ -->
+<!-- </div> -->
+</body>
+</html>
+
+<script>
+ 
+    function studentSignup() {
+    
+    let email = document.getElementById('email').value
+
+    let password = document.getElementById('password').value
+
+    let firstName = document.getElementById('first_name').value
+
+    let lastName = document.getElementById('last_name').value
+
+    let studentSignupObj = {
+        email,
+        password,
+        firstName,
+        lastName,
+    }
+    var count = 0;
+
+    //validation for email
+    
+    const students = JSON.parse(localStorage.getItem('students'))
+    if (students!=null){
+        for(i=0; i<students.length; i++){
+            if(students[i].email==email){
+                document.getElementById('error-email').innerHTML="* Email already exist"
+                count = 1
+            }
+        }
+    }
+    if(email[0]=='@'){
+        document.getElementById('email').style.background='#FFFAFA'
+        document.getElementById('email').style.border="1px solid red"
+        document.getElementById('error-email').innerHTML="* Please enter a valid email address"
+        count=1;
+    }
+    if(email == ''){
+        document.getElementById('email').style.background='#FFFAFA'
+        document.getElementById('email').style.border="1px solid red"
+        document.getElementById('error-email').innerHTML="* This field is required"
+        count=1;
+    }  
+
+    //validation for password
+    if(password.length<6){
+        
+        document.getElementById('error-password').innerHTML="* Please enter at least 6 characters"
+        document.getElementById('password').style.border="1px solid red"
+        document.getElementById('password').style.background='#FFFAFA'
+        count=1;
+    }
+    if(password==''){
+        document.getElementById('error-password').innerHTML="* This field is required"
+        document.getElementById('password').style.border="1px solid red"
+        document.getElementById('password').style.background='#FFFAFA'
+        count=1;
+    }
+    
+
+    //validation for name
+    if(firstName==''){
+        document.getElementById('first_name').style.border="1px solid red"
+        document.getElementById('first_name').style.background='#FFFAFA'
+        document.getElementById('error-name').innerHTML="* This field is required"
+        count=1;
+    }
+    
+    //check if any issue in input fields -
+
+    if(count==1){
+        return false;
+    }
+
+    //if no issue in form, show success pop-up -
+
+    function showmodal() {
+        document.querySelector('.bg-modal').style.display = "flex";
+    };
+
+    document.querySelector('.closebtn').addEventListener("click", function() {
+        document.querySelector('.bg-modal').style.display = "none";
+    });
+    
+    showmodal();
+
+    //push details in localstorage
+
+    let arr;
+
+    arr = localStorage.getItem('students')
+
+    if(arr==null){
+        arr=[]  //for first time users
+    }
+    else{
+        arr = JSON.parse(localStorage.getItem('students'))
+    }
+
+    arr.push(studentSignupObj)
+
+    localStorage.setItem('students', JSON.stringify(arr))
+
+
+    //clear input fields-
+   // window.location.href('login.html')
+
+} 
+
+
+</script>
