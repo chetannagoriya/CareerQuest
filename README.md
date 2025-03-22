@@ -19,3 +19,8 @@ Why CareerQuest?
 In today's competitive job market, students often struggle to navigate the complexities of job searching. CareerQuest is here to simplify that process, providing a supportive community and the resources needed to succeed. Whether you're a recent graduate or still in school, CareerQuest is your go-to platform for launching your career.
 
 Join us on this journey to unlock your potential and take the first step towards a fulfilling career!
+![Screenshot (23)](https://github.com/user-attachments/assets/7cef0d5c-ab37-44a4-b181-35943857f33d)
+![Screenshot (24)](https://github.com/user-attachments/assets/0ef5128a-030d-476c-8d35-d9b71b0aa980)
+![Screenshot (25)](https://github.com/user-attachments/assets/1c770383-b801-41f6-b4b5-3a1b7809bfda)
+![Screenshot (26)](https://github.com/user-attachments/assets/8e676ea8-a72e-45d4-926e-c86af35b7228)
+
